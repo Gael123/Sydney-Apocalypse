@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+rails# frozen_string_literal: true
 
 class DeviseCreatePatients < ActiveRecord::Migration[6.0]
   def change
