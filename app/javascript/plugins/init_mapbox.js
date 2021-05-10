@@ -1,5 +1,7 @@
 import mapboxgl from 'mapbox-gl';
 
+
+
 const mapElement = document.getElementById('map');
 
 const buildMap = () => {
@@ -55,8 +57,8 @@ const mapMarkers = []
 
   const fitMapToMarkers = (map, markers) => {
   const bounds = new mapboxgl.LngLatBounds();
-  let NorthWest = bounds.getNorthWest()
-    let West = bounds.getWest()
+  // let NorthWest = bounds.getNorthWest()
+  //   let West = bounds.getWest()
   markers.forEach(marker => bounds.extend([ marker.lng, marker.lat ]));
  map.fitBounds(bounds, { padding: 70, maxZoom: 12, duration: 0 });
 };
